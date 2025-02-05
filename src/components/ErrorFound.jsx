@@ -1,6 +1,10 @@
-import { NavLink,  useNavigate } from "react-router-dom";
+import { NavLink, useNavigate ,useRouteError} from "react-router-dom";
 
 export const ErrorFound = () => {
+
+  let error = useRouteError();
+  
+  console.log(error.error);
 
   let navigate = useNavigate();
 

@@ -1,6 +1,6 @@
 import "./styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { AppLayout } from "./components/AppLayout";
 import { ErrorFound } from "./components/ErrorFound";
 import { Home } from "./components/Home";
@@ -10,7 +10,7 @@ import { Services } from "./components/Services";
 import { About } from "./components/About";
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <AppLayout />,

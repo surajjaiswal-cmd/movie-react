@@ -1,0 +1,102 @@
+* {
+    font-family: poppins
+}
+
+/* header part =======================================================*/
+header {
+    width: 100%;
+    background-color: #1d1e1e;
+}
+
+
+.headsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1e1e;
+    height: 72px;
+}
+
+
+#nevbar_option {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#nevbar_option a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1px 0;
+    border-bottom: 3px solid #1d1e1e;
+    text-transform: capitalize;
+}
+
+#nevbar_option a.active {
+    color: #767c7c;
+}
+
+#nevbar_option a:hover {
+    border-bottom: 3px solid #767c7c;
+    color: #767c7c;
+}
+
+@media (max-width:800px) {
+    .headsection {
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+    }
+}
+
+/* footer  =====================================*/
+footer {
+    width: 100%;
+    background-color: #1d1e1e;
+}
+
+.footersection1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+
+}
+
+.about-healding {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.about-item {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-transform: capitalize;
+}
+
+@media (max-width:600px) {
+    .footersection1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* banner slider============================== */
+
+.s1-slide {
+    width: 100vw;
+    height: auto;
+}
+
+/* movie page ============== */
+.all-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
